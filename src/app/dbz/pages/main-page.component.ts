@@ -28,4 +28,12 @@ export class MainPageComponent {
 			power: 10000,
 		},
 	];
+
+	onNewCharacter(character: Character) {
+		this.characters.push(character);
+	}
+
+	onDeleteCharacter(index: number) {
+		this.characters.splice(index, 1);
+	}
 }
